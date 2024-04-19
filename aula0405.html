@@ -1,0 +1,46 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 04/05</title>
+    <script type="text/javascript">
+        function validacao() {
+            var user = "carla";
+            var password = "1234";
+            if ((user == document.form1.usuario.value)
+                && (password == document.form1.senha.value)) {
+                window.alert("Seja bem vindo " + user + " ");
+                return true;
+            } else {
+                window.alert("Usuario ou senha invalido");
+                return false;
+            }
+        } 
+    </script>
+</head>
+
+<body bgcolor="silver">
+    <center><b>***** ACESSO VIP *****</b></center>
+    <form action="pagina1.html" name="form1" method="post" onsubmit="return validacao();">
+        <center>
+            <table>
+                <tr>
+                    <td> Digite o nome </td>
+                    <td><input type="text" name="usuario"> </td>
+                </tr>
+                <tr>
+                    <td> Digite a senha </td>
+                    <td><input type="password" name="senha"> </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><input type="submit" value="logar"> </td>
+                    <td><input type="reset" value="limpar"> </td>
+                </tr>
+            </table>
+        </center>
+    </form>
+</body>
+
+</html>

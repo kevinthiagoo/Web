@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body bgcolor="purple">
+    <div>
+        <form method="post" action="MyServlet">
+            <h3>Formulário com novos campos:</h3>
+            <table>
+                <tr>
+                    <td><label>Email:</label></td>
+                    <td><input type="email" name="email" required /></td>
+                </tr>
+                <tr>
+                    <td><label>Telefone:</label></td>
+                    <td><input type="tel" pattern="\(\d\d\)\d\d\d\d-\d\d\d\d" title="(xx) xxxx-xxxx" name="phone" required/></td>
+                </tr>
+                <tr>
+                    <td><label>idade:</label></td>
+                    <td><input type="number" name"age" required min="18" max="100" /></td>
+                </tr>
+            </table>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+
+</html>
